@@ -15,7 +15,9 @@ var descriptiveInfo = (function () {
         this.dataReceived = new core_1.EventEmitter();
     }
     descriptiveInfo.prototype.ngOnInit = function () {
+        console.log('reqdata', this.requestData);
         this.parsedData = JSON.parse(this.requestData);
+        console.log('dadata', this.parsedData);
         this.totalReqs = this.parsedData.totalReqs;
         this.latencyAvg = this.parsedData.latency.avg;
         this.latencyMin = this.parsedData.latency.min;

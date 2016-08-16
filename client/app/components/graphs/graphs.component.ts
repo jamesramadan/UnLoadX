@@ -54,7 +54,7 @@ export class Graphs {
   getTestSummaryData() {
     this.clicked = true;
      console.log('Request Data AHAHAHA', this._SocketService.requestData);
-    return this._http.get('/api/request/1')
+    return this._http.get('/api/request/17')
           .map(res => res)
           .subscribe(requests => {
             this.requestData = requests._body;

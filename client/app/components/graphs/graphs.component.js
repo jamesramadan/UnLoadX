@@ -30,7 +30,7 @@ var Graphs = (function () {
         var _this = this;
         this.clicked = true;
         console.log('Request Data AHAHAHA', this._SocketService.requestData);
-        return this._http.get('/api/request/1')
+        return this._http.get('/api/request/17')
             .map(function (res) { return res; })
             .subscribe(function (requests) {
             _this.requestData = requests._body;
